@@ -1,0 +1,98 @@
+/*General items*/
+
+body {
+    height: auto;
+    background-image: url("C:/Users/archi/Desktop/codingbootcamp/smerrell/triviaGame/assets/images/gamebackgroundimage.png");
+    background-position: center;
+    background-size: 90%;
+}
+
+.gameContainer {   
+    height: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+.form-check-label {
+    color: white;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; 
+    color: white;
+    height: 35px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#countdownTime, #timeLeft {
+    height: 60px;
+    color: white;
+    background-color: gray;
+    width: 600px;
+}
+#buttonBox {
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gameTitleRowTop, .gameTitleRowBtm {
+    height: 60px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+#startButton {
+    background-color: purple;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#buttonRow {
+    justify-content: center;
+}
+
+#questionBox {
+    height: auto;
+    width: 1500px;
+}
+
+/*question box items*/
+#questionBox1, #questionBox2, #questionBox3, #questionBox4, #questionBox5, #questionBox6, #questionBox7, #questionBox8, #questionBox9, #questionBox10 {
+    height: 220px;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-check-input, .form-check-label, {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center; 
+    color: white;
+    height: 9px;
+   }
+
+#questBox1ImageAnswers, #questionBox2ImageAnswers, #questBox3ImageAnswers, #questionBox4ImageAnswers, #questBox5ImageAnswers, #questionBox6ImageAnswers,
+#questBox7ImageAnswers, #questionBox8ImageAnswers, #questBox9ImageAnswers, #questionBox10ImageAnswers {
+    justify-content: right;
+}
+
+#aircraft1Pic, #aircraft2Pic, #aircraft3Pic, #aircraft4Pic, #aircraft5Pic, #aircraft6Pic, #aircraft7Pic, #aircraft8Pic, #aircraft9Pic, #aircraft10Pic     {
+    float: right;
+    clear: left;
+}
+

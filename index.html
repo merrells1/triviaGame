@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\css\style.css">
+    
+    <title>"US Air Force Aircraft" Trivia Game</title>
+</head>
+
+<body>
+    <!--This is where the top title and start button are Referenced-->
+    <div class ="container-fluid gameContainer">
+        <div class="container titleRowTop">
+            <h1>US Air Force Aircraft Trivia Game</h1>
+        </div>
+        <div class="container" id=countdownTime>
+                <p id="timeLeft"></p>
+            </div>
+        <div class ="container-fluid" id="buttonBox">
+            <div class="row" id="buttonRow">
+                <button type="button" class="btn btn-secondary" id="startButton">Start
+                </button>
+            </div>
+        </div>   
+    <!--This is where the game questions are located-->
+    <div class="container" id="questionBox"> 
+    <!--Question1 Information-->
+        <div class="container" id="questionBox1">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox1ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft1.png" id="aircraft1Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1a">
+                    <label class="form-check-label" for="defaultCheck1">
+                        C-130 Hercules
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2a">
+                    <label class="form-check-label" for="defaultCheck1">
+                        A-10 Warthog
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3a">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Mig-29 Fulcrum
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4a">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-100 Super Sabre
+                    </label>
+                </div>
+            </div>
+        </div>
+    <!--Question2 Information-->
+    <div class="container" id="questionBox2">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox2ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft2.png" id="aircraft2Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1b">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B2 Spirit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2b">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Su27 Super Flanker
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3b">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Mig-29 Fulcrum
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4b">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Sr-71 Blackbird
+                    </label>
+                </div>
+            </div>
+        </div>
+    <!--Question3 Information-->
+    <div class="container" id="questionBox3">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox3ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft3.png" id="aircraft3Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1c">
+                    <label class="form-check-label" for="defaultCheck1">
+                        KC135 Stratotanker
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2c">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-15 Strike Eagle
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3c">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B52-Stratofortress
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4c">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-100 Super Sabre
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Question4 Information-->
+    <div class="container" id="questionBox4">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox4ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft4.png" id="aircraft4Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1d">
+                    <label class="form-check-label" for="defaultCheck1">
+                        P38 Lightning
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2d">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-18 Super Hornet
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3d">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-4 Phantom
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4d">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-15 Strike Eagle II
+                    </label>
+                </div>
+            </div>
+        </div>
+    <!--Question5 Information-->
+    <div class="container" id="questionBox5">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox5ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft5.png" id="aircraft5Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1e">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F105 Thunderchief
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2e">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F117 Nighthawk
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3e">
+                    <label class="form-check-label" for="defaultCheck1">
+                        T-38 Talon
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4e">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F22 Raptor
+                    </label>
+                </div>
+            </div>
+        </div>    
+    <!--Question6 Information-->
+    <div class="container" id="questionBox6">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox6ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft6.png" id="aircraft6Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1f">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-16 Fighting Falcon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2f">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F35 Joint Strike Fighter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3f">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Su27 Super Flanker
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4f">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F18 Super Hornet
+                    </label>
+                </div>
+            </div>
+        </div>  
+    <!--Question7 Information-->
+    <div class="container" id="questionBox7">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox7ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft7.png" id="aircraft7Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1g">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-16 Fighting Falcon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2g">
+                    <label class="form-check-label" for="defaultCheck1">
+                        A-10 Warthog
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3g">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B2 Spirit
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4g">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-117 Nighthawk
+                    </label>
+                </div>
+            </div>
+        </div>
+    <!--Question8 Information-->
+    <div class="container" id="questionBox8">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox8ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft8.png" id="aircraft8Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1h">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B-52 Stratofortress
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2h">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B1 Lancer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3h">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B2 Spirit
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4h">
+                    <label class="form-check-label" for="defaultCheck1">
+                        B29-Super Fortress
+                    </label>
+                </div>
+            </div>
+        </div>
+    <!--Question9 Information-->
+    <div class="container" id="questionBox9">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox9ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft9.png" id="aircraft9Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1i">
+                    <label class="form-check-label" for="defaultCheck1">
+                    F-100 Super Sabre
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2i">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-18 Super Hornet
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3i">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-15 Strike Eagle II
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4i">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-135 Joint Strike Fighter
+                    </label>
+                </div>
+            </div>
+        </div> 
+    <!--Question10 Information-->
+    <div class="container" id="questionBox10">
+            <p>What is the name of the aircraft shown in in this image?</p>
+            <div class="questBox10ImageAnswers">
+                <img src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\images\aircraft10.png" id="aircraft10Pic">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox1j">
+                    <label class="form-check-label" for="defaultCheck1">
+                    C-17 Globemaster
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox2j">
+                    <label class="form-check-label" for="defaultCheck1">
+                        C-141 Starlifter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox3j">
+                    <label class="form-check-label" for="defaultCheck1">
+                        C-130 Hercules
+                    </label>
+                </div>       
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox4j">
+                    <label class="form-check-label" for="defaultCheck1">
+                        F-100 Super Sabre
+                    </label>
+                </div>
+            </div>
+        </div>    
+    <div class="container titleRowBottom">
+        <h1>US Air Force Aircraft Trivia Game</h1>
+    </div>
+
+    <!--This is where the Javascript File is Referenced-->
+    <script type="text/javascript" src="C:\Users\archi\Desktop\codingbootcamp\smerrell\triviaGame\assets\javascript\app.js"></script>
+</body>
+</html>
